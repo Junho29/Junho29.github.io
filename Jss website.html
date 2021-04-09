@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chiropractor JJS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Arimo|Gothic+A1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="js/index.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <ul class="navigation">
+                <li><a class="contact" href="#contactus" id="mostRight">CONTACT</a></li>
+                <li><a class="contact" href="#contact" >ABOUT</a></li>
+                <li><a class="projects" href="#projects">SERVICES</a></li>
+                <li><a class="home" href="#header">HOME</a></li>
+
+            </ul>
+        </div>
+
+        <div class="mouse">
+            <a class="scroll-link">
+                <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+                    <g fill="none" fill-rule="evenodd">
+                    <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+                    <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <div id="header">
+            <p>Chiropractor</p>
+            <h1>Junho Seo</h1>
+            <button class="resume" id="myBtn">Book An Appointment</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+            <h1>Book an Appointment</h1>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="fname">Phone#:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Email address:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="lname">MSP#:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="lname">Where does your body hurts (refer to the chart):</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <img class="musclechart"  src="muscle-anatomy-chart.jpg">
+                <input type="button" onclick='document.getElementById("modalContent").innerHTML = "Appointment Booked Successfully!"' value="Submit">
+              </form>  
+            </div>
+        </div>
+
+        </div>
+
+        <div id="modal2">
+            <div id="myModalTitle"></div>
+            <div id="myModalBody"></div>
+        </div>
+
+        <div class="content" id="projects">
+            <h1>SERVICES</h1>
+            <hr>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./benefits-of-massage-hero.webp" height="267px" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Massage Therapy</h5>
+                  <p class="card-text"> It helps relieve the pain, rehabilitate sports injuries, reduce stress, increase relaxation, address anxiety and depression, and aid general wellness.</p>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./iStock-507273276-705x470.jpg" height="267px" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Sports Therapy</h5>
+                  <p class="card-text">Make muscles relax through heat generated, circulation and stretching. It will reduce the risk of injury.</p>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./Chiropractic.jpg" height="267px" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Chiropractic</h5>
+                  <p class="card-text"> manipulative treatment of misalignments of the joints, especially those of the spinal column, which are held to cause other disorders by affecting the nerves, muscles, and organs.</p>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="parallax" id="trans"></div>
+
+        <div class="content" id="contact">
+            <h1>ABOUT ME</h1>
+            <hr>
+
+            <div id="aboutpage">
+                <h1> Junho Seo  <img src="./KakaoTalk_Photo_2020-11-17-14-33-32.jpeg" id="junho"/></h1>
+               
+                <br>
+                <p>In 2017, I decided to become a chiropractor.
+                   I Graduated from Burnaby South Secondary school.<br>
+                   I got into UBC in 2021, and Graduated from UBC Vancouver
+                   Campus, Achieved Bachelor of Kinesiology.<br>
+                   In 2029, I became a Chiropractor and opened my office at vancouver.<br>
+                   I feel rewarding everytime my patients get recovered perfectly.<br>
+                   I really love my job, because I feel like I am being helpful to numerous patients.<br>
+                   My life goal is to treat as many patients as possible perfectly,<br> so they could get back their perfect body structure.
+
+                   
+                </p>
+            </div>
+            <br>
+        </div>
+
+        <div class="parallax" id="trans"></div>
+
+        <div class="content" id="contactus">
+            <h1>CONTACT ME</h1>
+            <hr>
+            <img id="map" src="./Capture.PNG" height="300px">
+        <div  class="contactinfo">
+         <p id="contactdetails">
+             <b>Phone number</b>: 604-123-4567<br>
+             <b>Fax number</b>: 604-123-4567<br>
+             <b>Email</b>: Jsschiropractor@gmail.com<br>
+            <b>Address</b>: 6939 Gilley Avenue<br>
+
+         </p>
+        </div>
+        <br>
+        <br>
+        </div>
+    </body>
+</html>
